@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(254, 206, 147);
+}
+
+.card {
+    font-family: "Candara", sans-serif;
+    width: 340px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.back-image img {
+    width: 100%; 
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+
+}
+.profile-image img {
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-top: -75px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 100px;
+    border: 3px solid #fff;
+    transition-duration: 0.25s;
+    transition-property: transform;
+}
+
+.profile-image img:hover {
+    transform: scale(1.1);
+}
+
+.clickButton {
+    background-color: #f34e38;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .clickButton:hover {
+    background-color: #fb2205;
+    color: black;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #f9d2d2;
+    font-size: 17px;
+    display: none;
+    overflow: hidden;
+}
+
+/*Icons*/
+
+.icons {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+}
+.icons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #050303dc;
+    padding: 0 14px;
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.ig a:hover{
+    color: #c13584;
+    transform: scale(1.5);
+}
+
+.yt a:hover{
+    color: #FF0000;
+    transform: scale(1.5);
+}
+
+.gh a:hover{
+    transform: scale(1.5);
+}
+
+.icons, .ig, .yt, .gh{
+    display: inline-block;
+}
+
